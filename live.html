@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPIDERVENUE – Live Show</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1>SPIDERVENUE – Live</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="live.html">Live</a>
+      <a href="schedule.html">Schedule</a>
+    </nav>
+  </header>
+  <main>
+    <section id="chat">
+  <h3>Live Chat</h3>
+  <script
+    id="cid0020000410239175720"
+    data-cfasync="false"
+    async
+    src="https://st.chatango.com/js/gz/emb.js"
+    style="width: 339px; height: 579px;">
+  {"handle":"spidervenue","arch":"js","styles":{"a":"ffffff","b":100,"e":"ffffff","h":"ffffff","l":"cccccc","m":"dadada","q":"ffffff","r":100,"sbc":"bbbbbb","fwtickm":1}}
+  </script>
+</section>
+
+
+
+
+
+    <section id="tech-login">
+      <h3>TECH Login</h3>
+      <input type="password" id="tech-pass" placeholder="Enter TECH password">
+      <button onclick="checkTech()">Login</button>
+    </section>
+
+    <section id="tech-controls" style="display:none;">
+        <h3>TECH Controls</h3>
+        <button onclick="triggerConfetti()">Trigger Confetti</button>
+        <button onclick="flashScreen()">Trigger Flash</button>
+        <br/><br/>
+        <label for="led-color">Choose LED Color:</label>
+        <input type="color" id="led-color" value="#ff0000" onchange="setHueFromColor(this.value)">
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
